@@ -35,17 +35,19 @@ mat-sidenav mat-nav-list a {
   margin-top: 10px;
   margin-left: 14px;
   padding-right: 12px;
-  span {
+  position: relative;
+  .mat-list-name {
     color: #fff;
     font-size: 13px;
     font-weight: 500;
+    display: block;
   }
 }
 
 mat-sidenav mat-nav-list a:hover {
   background-color: #fff;
   border-radius: 6px;
-  span {
+  .mat-list-name {
     color: #07004d;
     font-weight: 700;
   }
@@ -75,4 +77,18 @@ mat-sidenav:hover .mat-list-name {
 mat-sidenav:hover mat-nav-list a {
   width: 190px;
   overflow: hidden;
+}
+
+/* Material List Anchor */
+
+.chevron {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+mat-sidenav:hover .chevron {
+  display: block;
 }

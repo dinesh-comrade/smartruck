@@ -9,7 +9,7 @@
       <img [src]="headerImg" alt="Smartruck" />
     </div>
     <mat-nav-list>
-      @for (svg of svgs; track svg) {
+      @for (svg of svgs;let i = $index; track svg) {
       <a
         mat-list-item
         (mouseenter)="svg.currentIcon = svg.activeIcon"
@@ -17,6 +17,14 @@
       >
         <img matListItemIcon [src]="svg.currentIcon" alt="{{ svg.name }}" />
         <span class="mat-list-name">{{ svg.name }}</span>
+        @if (i === 5) {
+        <span>
+          <img
+            src="assets/active/chevron_icon.svg"
+            alt="arrow"
+            class="chevron"
+          /> </span
+        >}
       </a>
       }
     </mat-nav-list>
