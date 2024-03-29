@@ -10,6 +10,7 @@ import { MatListModule } from '@angular/material/list';
   styleUrl: './sidenav.component.css',
 })
 export class SidenavComponent {
+  headerImg = 'assets/S_logo.svg';
   svgs = [
     {
       inactiveIcon: 'assets/inactive/control_room_inactive_icon.svg',

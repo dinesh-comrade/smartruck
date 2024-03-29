@@ -1,19 +1,18 @@
 mat-sidenav-container {
-  height: 800px;
+  height: calc(100vh - 64px);
 }
 
 mat-sidenav {
-  /* z-index: 2;
-  position: fixed; */
-  width: 218px;
+  position: fixed;
+  z-index: 2;
+  width: 70px;
   background-color: #20104d;
-  /* transition: all 0.3s ease-in-out;
-  overflow: hidden; */
+  transition: all 0.3s ease-in-out;
 }
 
-/* mat-sidenav:hover {
-  width: 218px;
-} */
+mat-sidenav mat-nav-list {
+  overflow: hidden;
+}
 
 .sidenav-header {
   display: flex;
@@ -23,18 +22,10 @@ mat-sidenav {
   margin-bottom: 10px;
 }
 
-mat-sidenav mat-nav-list a:hover {
-  background-color: #fff;
-  border-radius: 6px;
-
-  span {
-    color: #07004d;
-    font-weight: 700;
-  }
-}
-
 mat-sidenav mat-nav-list a {
-  width: 190px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  width: 42px;
   height: 42px;
   margin-top: 10px;
   margin-left: 14px;
@@ -44,9 +35,36 @@ mat-sidenav mat-nav-list a {
     font-size: 13px;
     font-weight: 500;
   }
-  transition: all 0.3s ease-in-out;
+}
+
+mat-sidenav mat-nav-list a:hover {
+  background-color: #fff;
+  border-radius: 6px;
+  span {
+    color: #07004d;
+    font-weight: 700;
+  }
 }
 
 mat-sidenav .mat-mdc-list-item-icon {
   margin: 0px 10px;
+}
+
+mat-sidenav .mat-list-name {
+  display: none;
+}
+
+mat-sidenav:hover {
+  width: 218px;
+  overflow: hidden;
+}
+
+mat-sidenav:hover .mat-list-name {
+  display: block;
+  overflow: hidden;
+}
+
+mat-sidenav:hover mat-nav-list a {
+  width: 190px;
+  overflow: hidden;
 }

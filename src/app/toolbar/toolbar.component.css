@@ -11,15 +11,15 @@
   max-width: 100%;
   border: 1px solid #dfe3eb;
   opacity: 1;
-  /* position: relative;
-  z-index: 1; */
+  position: relative;
+  z-index: 1;
 }
 
 /* Text Styles*/
 .dashboard {
   font-size: 20px;
   font-weight: 700;
-  padding-left: 30px;
+  padding-left: 84px;
 }
 
 /* JSPL Text */
