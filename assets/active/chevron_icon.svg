@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
   <g id="chevron_icon" transform="translate(10) rotate(90)">
     <path id="Path_16564" data-name="Path 16564" d="M0,0H10V10H0Z" fill="rgba(0,0,0,0)"/>
-    <path id="Path_16565" data-name="Path 16565" d="M3.894,10.416h6.284a.89.89,0,0,0,.74-.412A.957.957,0,0,0,11,9.138L7.817,3.448a.883.883,0,0,0-1.571,0L3.059,9.138a.957.957,0,0,0,.074.848.893.893,0,0,0,.711.429" transform="translate(-2.034 -2.017)" fill="#07004d"/>
+    <path id="Path_16565" data-name="Path 16565" d="M3.894,10.416h6.284a.89.89,0,0,0,.74-.412A.957.957,0,0,0,11,9.138L7.817,3.448a.883.883,0,0,0-1.571,0L3.059,9.138a.957.957,0,0,0,.074.848.893.893,0,0,0,.711.429" transform="translate(-2.034 -2.017)" fill="#20104D"/>
   </g>
 </svg>
