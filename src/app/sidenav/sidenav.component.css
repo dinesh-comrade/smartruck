@@ -1,7 +1,9 @@
+/* Container */
 mat-sidenav-container {
   height: calc(100vh - 64px);
 }
 
+/* Sidenav */
 mat-sidenav {
   position: fixed;
   z-index: 2;
@@ -10,10 +12,12 @@ mat-sidenav {
   transition: all 0.3s ease-in-out;
 }
 
+/* List */
 mat-sidenav mat-nav-list {
   overflow: hidden;
 }
 
+/* Side Nav Header  */
 .sidenav-header {
   display: flex;
   justify-content: flex-start;
@@ -22,6 +26,7 @@ mat-sidenav mat-nav-list {
   margin-bottom: 10px;
 }
 
+/* Side Nav anchors */
 mat-sidenav mat-nav-list a {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -46,14 +51,17 @@ mat-sidenav mat-nav-list a:hover {
   }
 }
 
+/* List Icon */
 mat-sidenav .mat-mdc-list-item-icon {
   margin: 0px 10px;
 }
 
+/* List Names */
 mat-sidenav .mat-list-name {
   display: none;
 }
 
+/* Hovering of Side Nav */
 mat-sidenav:hover {
   width: 218px;
   overflow: hidden;

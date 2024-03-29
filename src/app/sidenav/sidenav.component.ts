@@ -59,6 +59,7 @@ export class SidenavComponent {
       activeIcon: 'assets/active/account_active_icon.svg',
       name: 'Accounting',
       currentIcon: 'assets/inactive/account_inactive_icon.svg',
+      isActive: true,
     },
     {
       inactiveIcon: 'assets/inactive/settings_inactive_icon.svg',
