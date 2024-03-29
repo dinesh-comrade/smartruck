@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="dashboard">Dashboard</span>
+  <span class="example-spacer"></span>
+  <div class="nav-items">
+    <span class="jspl">Jspl</span>
+    <mat-form-field>
+      <mat-select required [(value)]="selectedPlace">
+        <mat-option value="raigarh">Raigarh</mat-option>
+        <mat-option value="bangalore">Bangalore</mat-option>
+        <mat-option value="chennai">Chennai</mat-option>
+        <mat-option value="hyderabad">Hyderabad</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="notification">
+      <img
+        src="./assets/notification.svg"
+        alt="notification"
+        [width]="32"
+        [height]="32"
+      />
+    </div>
+    <div class="profile">
+      <img src="./assets/man.png" alt="profile" />
+    </div>
+  </div>
+</mat-toolbar>

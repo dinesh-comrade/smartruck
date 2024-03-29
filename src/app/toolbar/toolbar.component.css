@@ -1,0 +1,117 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/* Toolbar */
+
+.mat-toolbar.mat-primary {
+  background-color: #fff;
+  color: #000;
+  height: 56px;
+  max-width: 100%;
+  border: 1px solid #dfe3eb;
+  opacity: 1;
+  /* position: relative;
+  z-index: 1; */
+}
+
+/* Text Styles*/
+.dashboard {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 30px;
+}
+
+/* JSPL Text */
+.jspl {
+  color: #131722;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+/* Places Dropdown */
+mat-form-field {
+  width: 166px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+mat-select {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+mat-select .mat-mdc-select-value-text {
+  color: #131722;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+mat-form-field .mdc-text-field {
+  padding: 5px 16px;
+}
+
+mat-form-field .mdc-text-field--no-label .mat-mdc-form-field-infix {
+  padding-top: 0;
+}
+
+mat-form-field .mdc-line-ripple {
+  display: none;
+}
+
+.mat-mdc-form-field-bottom-align {
+  display: none !important;
+}
+
+mat-form-field .mat-mdc-select-arrow svg {
+  fill: #131722;
+}
+
+/* Whole Navigation Items */
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-items .mat-mdc-icon-button {
+  color: #f0f3f9;
+}
+
+.notification {
+  padding: 10px 0px 0px 16px;
+}
+
+.profile {
+  padding: 10px 24px 0px 16px;
+}
+
+.notification,
+.profile {
+  position: relative;
+}
+
+.notification::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 40%;
+  background-color: #dfe3eb;
+  transform: translateY(-50%);
+}
+
+.profile::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 35%;
+  background-color: #dfe3eb;
+  transform: translateY(-50%);
+}

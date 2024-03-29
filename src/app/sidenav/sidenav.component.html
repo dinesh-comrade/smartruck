@@ -1,0 +1,20 @@
+<mat-sidenav-container>
+  <mat-sidenav opened mode="side">
+    <div class="sidenav-header">
+      <img src="assets/Smartruck_hover_logo.svg" alt="Smartruck" />
+    </div>
+    <mat-nav-list>
+      @for (svg of svgs; track svg) {
+      <a
+        mat-list-item
+        (mouseenter)="svg.currentIcon = svg.activeIcon"
+        (mouseleave)="svg.currentIcon = svg.inactiveIcon"
+      >
+        <img matListItemIcon [src]="svg.currentIcon" alt="{{ svg.name }}" />
+        <span>{{ svg.name }}</span>
+      </a>
+      }
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content></mat-sidenav-content>
+</mat-sidenav-container>
