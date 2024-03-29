@@ -36,21 +36,24 @@ mat-sidenav mat-nav-list a {
   margin-left: 14px;
   padding-right: 12px;
   position: relative;
-  .mat-list-name {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 500;
-    display: block;
-  }
+}
+
+mat-sidenav mat-nav-list a .mat-list-name {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  display: block;
+  transition: all 0.3s ease-in-out;
 }
 
 mat-sidenav mat-nav-list a:hover {
   background-color: #fff;
   border-radius: 6px;
-  .mat-list-name {
-    color: #07004d;
-    font-weight: 700;
-  }
+}
+
+mat-sidenav mat-nav-list a:hover .mat-list-name {
+  color: #07004d;
+  font-weight: 700;
 }
 
 /* List Icon */
